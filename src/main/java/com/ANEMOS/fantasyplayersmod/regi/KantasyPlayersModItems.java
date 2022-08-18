@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(Fantasyplayersmod.MOD_ID)
 public class KantasyPlayersModItems {
 
-    @EventBusSubscriber(modid = Fantasyplayersmod.MOD_ID, bus = EventBusSubscriber.Bus.MOD);
+    @EventBusSubscriber(modid = Fantasyplayersmod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
     public static class Register{
 
         @SubscribeEvent
