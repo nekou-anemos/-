@@ -5,9 +5,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.NotNull;
 
-public class FantasyplayersmodTab extends CreativeModeTab {
+public class FantasyPlayersModTab extends CreativeModeTab {
 
-    public FantasyplayersmodTab() {
+    public FantasyPlayersModTab() {
         super("fantasyplayersmod_tab");
     }
 

@@ -1,11 +1,11 @@
 package com.ANEMOS.fantasyplayersmod.item;
 
-import com.ANEMOS.fantasyplayersmod.main.Fantasyplayersmod;
+import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
 import net.minecraft.world.item.Item;
 
-public class Itemyakusou extends Item {
-    public Itemyakusou() {
-        super(new Properties().tab(Fantasyplayersmod.FANTASYPLAYERSMOD_TAB).stacksTo(16));
+public class ItemYakusou extends Item {
+    public ItemYakusou() {
+        super(new Properties().tab(FantasyPlayersMod.FANTASYPLAYERSMOD_TAB).stacksTo(16));
         this.setRegistryName("yakusou");
     }
 }

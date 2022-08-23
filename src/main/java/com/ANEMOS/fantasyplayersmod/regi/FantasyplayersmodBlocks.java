@@ -1,7 +1,7 @@
 package com.ANEMOS.fantasyplayersmod.regi;
 
-import com.ANEMOS.fantasyplayersmod.block.BlockRennseigama;
-import com.ANEMOS.fantasyplayersmod.main.Fantasyplayersmod;
+import com.ANEMOS.fantasyplayersmod.block.BlockRenkingama;
+import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -11,29 +11,31 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 
-@ObjectHolder(Fantasyplayersmod.MOD_ID)
+@ObjectHolder(FantasyPlayersMod.MOD_ID)
 
-public class FantasyplayersmodBlocks {
+public class FantasyPlayersModBlocks {
 
-    public static BlockRennseigama HF_RENKINGAMA = null;
+    public static BlockRenkingama HF_RENKINGAMA = null;
 
-    @Mod.EventBusSubscriber(modid = Fantasyplayersmod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static  class Register{
+    @Mod.EventBusSubscriber(modid = FantasyPlayersMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class Register {
         @SubscribeEvent
-        public static void registerBlocks(final RegistryEvent.Register<Block> event){
-            HF_RENKINGAMA = new BlockRennseigama();
+        public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+            HF_RENKINGAMA = new BlockRenkingama();
 
-            final Block[] blocks ={
-                   HF_RENKINGAMA
+            final Block[] blocks = {
+                    HF_RENKINGAMA
             };
-                    event.getRegistry().registerAll(blocks);
+
+            event.getRegistry().registerAll(blocks);
         }
+
         @SubscribeEvent
-        public static void registrBlockItems(final RegistryEvent.Register<Item> event){
+        public static void registrBlockItems(final RegistryEvent.Register<Item> event) {
             final BlockItem[] blockItems = {
-                    new BlockItem(HF_RENKINGAMA,new Item.Properties().tab(Fantasyplayersmod.FANTASYPLAYERSMOD_TAB))
+                    new BlockItem(HF_RENKINGAMA, new Item.Properties().tab(FantasyPlayersMod.FANTASYPLAYERSMOD_TAB))
             };
-            for (BlockItem item : blockItems){
+            for (BlockItem item : blockItems) {
                 final Block block = item.getBlock();
                 final ResourceLocation registryName = block.getRegistryName();
                 event.getRegistry().register(item.setRegistryName(registryName));
