@@ -1,4 +1,4 @@
-package com.ANEMOS.fantasyplayersmod.main;
+package com.anemos.fantasyplayersmod.main;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

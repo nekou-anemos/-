@@ -1,6 +1,7 @@
-package com.ANEMOS.fantasyplayersmod.item;
+package com.anemos.fantasyplayersmod.item;
 
-import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
+import com.anemos.fantasyplayersmod.main.FantasyPlayersMod;
+
 import net.minecraft.world.item.Item;
 
 public class ItemYakusou extends Item {

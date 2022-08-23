@@ -1,7 +1,8 @@
-package com.ANEMOS.fantasyplayersmod.regi;
+package com.anemos.fantasyplayersmod.regi;
 
-import com.ANEMOS.fantasyplayersmod.block.BlockRenkingama;
-import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
+import com.anemos.fantasyplayersmod.block.BlockRenkingama;
+import com.anemos.fantasyplayersmod.main.FantasyPlayersMod;
+
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

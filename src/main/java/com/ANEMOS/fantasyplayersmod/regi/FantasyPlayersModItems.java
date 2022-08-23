@@ -1,7 +1,8 @@
-package com.ANEMOS.fantasyplayersmod.regi;
+package com.anemos.fantasyplayersmod.regi;
 
-import com.ANEMOS.fantasyplayersmod.item.ItemYakusou;
-import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
+import com.anemos.fantasyplayersmod.item.ItemYakusou;
+import com.anemos.fantasyplayersmod.main.FantasyPlayersMod;
+
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

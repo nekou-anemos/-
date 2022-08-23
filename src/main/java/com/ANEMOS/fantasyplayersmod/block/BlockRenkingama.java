@@ -1,6 +1,6 @@
-package com.ANEMOS.fantasyplayersmod.block;
+package com.anemos.fantasyplayersmod.block;
 
-import com.ANEMOS.fantasyplayersmod.main.FantasyPlayersMod;
+import com.anemos.fantasyplayersmod.main.FantasyPlayersMod;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
