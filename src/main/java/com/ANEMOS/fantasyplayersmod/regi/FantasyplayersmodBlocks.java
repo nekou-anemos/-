@@ -15,14 +15,16 @@ import net.minecraftforge.registries.ObjectHolder;
 
 public class FantasyplayersmodBlocks {
 
-    public static final BlockRennseigama HF_RENKINGAMA = null;
+    public static BlockRennseigama HF_RENKINGAMA = null;
 
     @Mod.EventBusSubscriber(modid = Fantasyplayersmod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static  class Register{
         @SubscribeEvent
         public static void registerBlocks(final RegistryEvent.Register<Block> event){
+            HF_RENKINGAMA = new BlockRennseigama();
+
             final Block[] blocks ={
-                    new BlockRennseigama()
+                   HF_RENKINGAMA
             };
                     event.getRegistry().registerAll(blocks);
         }
